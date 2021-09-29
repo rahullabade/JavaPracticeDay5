@@ -1,19 +1,19 @@
 package javapracticeday5;
 
+import java.util.Scanner;
+
 public class HarmonicNumber {
-
-static double nthHarmonic(int N) 
-{
-	float harmonic = 1;
-	for (int i = 2; i <= N; i++) {
-		harmonic += (float)1 / i;
+	 public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Range:");
+		int number = sc.nextInt();
+		double k = 0.00;
+		for (int i = 1; i <= number; i++)
+			k += (double)1 / i;
+		{
+			System.out.println(number+ "The Harmonic value = "+k);
+		}
 	}
-	return harmonic;
-}
-	public static void main(String[] args) {
-		int N = 8;
-		System.out.println("nth Harmonic(N)");
 
-	}
 
 }
